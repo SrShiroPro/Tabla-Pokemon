@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula de imágenes Pokémon - By Sh1r0</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        li {
+  color: #7200a7;
+  font-size: 18px;
+  font-family: Cambria, Arial, Helvetica, sans-serif;
+}
+
+        h2 {
+  color: #000000;
+  font-size: 18px;
+  font-family: Cambria, Arial, Helvetica, sans-serif;
+}
+        .columna {
+            float: left;
+            width: 20%;
+            padding-right: 5px;
+        }
+
+        .fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            /* Para que sea responsiva */
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <li><u>Home</u></li>
+    <li><u>Pokedex 1</u></li>
+    <li><u>Pokedex 2</u></li>
+    <li><u>Pokedex 3</u></li>
+
+
+
+
+
+    <div class="fila">
+        <div class="columna">
+            <img src="img/abra.png">
+            <h1>Abra</h1>
+            <h2>psychic</h2>
+           
+
+
+
+        </div>
+        <div class="columna">
+            <img src="img/aerodactyl.png">
+            <h1>Aaerodactyl</h1>
+            <h2>rock</h2>
+            <h2>fliying</h2>
+
+        </div>
+        <div class="columna">
+            <img src="img/alakazam.png">
+            <h1>Alakazam</h1>
+            <h2>psychic</h2>
+          
+
+
+        </div>
+    </div>
+    <div class="fila">
+        <div class="columna">
+            <img src="img/arbok.png">
+            <h1>Arbok</h1>
+            <h2>poison</h2>
+
+        </div>
+        <div class="columna">
+            <img src="img/arcanine.png">
+            <h1>Arcanine</h1>
+            <h2>fire</h2>
+
+        </div>
+        <div class="columna">
+            <img src="img/articuno.png">
+            <h1>Articuno</h1>
+            <h2>ice</h2>
+            <h2>fliying</h2>
+
+        </div>
+    </div>
+</body>
+
+</html>
