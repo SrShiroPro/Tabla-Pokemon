@@ -7,11 +7,108 @@
     <title>Cuadrícula de imágenes Pokémon - By Sh1r0</title>
 
     <style>
-        * {
-            box-sizing: border-box;
+
+
+        h1 { 
+            text-align: center;
+        
         }
+        h2 { 
+            
+            text-align: center;
+        
+        }
+
+        
+        body { background-color: aliceblue;padding: 150px;font-family:Arial, Helvetica, sans-serif;
+        
+        }
+
+.tipo_psychic{
+    background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background-color: #b97fc9;
+    color: #fff;
+}
+        
+.pokemons {
+    border-radius: 40px;
+    border: 3px solid;
+background-color: rgb(0, 0, 0);
+  border-radius: 2px black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.pokemons:hover {
+  
+   box-shadow: 0px 5px 12px red;
+  }
+
+.poke_description {
+    background-color: white;
+    border-radius: 40px;
+    border: 3px solid;
+    animation-name: example;
+  animation-duration: 4s;
+
+}
+
+.pokemons:hover {
+  background-color: #b6b6b6;
+  cursor: hand;
+}   
+#menu{
+    background-color: #000000;
+    border-radius: 30px;
+    color: white;
+}
+
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#menu ul li{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 30px;
+
+
+}
+
+#menu ul li a{
+color:rgba(255, 255, 255, 0.788);
+text-decoration: none;
+text-shadow: #b6b6b6;
+text-shadow: 2px 2px 4px #000000;
+border-radius: 30px;
+
+}
+
+#menu ul li a:hover{
+background-color: rgb(255, 118, 118);
+padding: 10px;
+border-radius: 30px;
+animation-name: example;
+  animation-duration: 4s;
+
+
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+        
         li {
-  color: #7200a7;
+            background-color: black;
+  color: black;
+  text-decoration: none;
   font-size: 18px;
   font-family: Cambria, Arial, Helvetica, sans-serif;
 }
@@ -19,84 +116,96 @@
         h2 {
   color: #000000;
   font-size: 18px;
-  font-family: Cambria, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-        .columna {
-            float: left;
-            width: 20%;
-            padding-right: 5px;
-        }
-
-        .fila::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+  
 
         img {
             /* Para que sea responsiva */
-            width: 70%;
+            width: 30%;
         }
     </style>
+
+
 </head>
-
+<h1> Designed by: Sh1ro</h1>
 <body>
-    <li><u>Home</u></li>
-    <li><u>Pokedex 1</u></li>
-    <li><u>Pokedex 2</u></li>
-    <li><u>Pokedex 3</u></li>
-
-
-
-
-
-    <div class="fila">
-        <div class="columna">
+    <div id="menu">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Pokedex 1</a></li>
+    <li><a href="#">Pokedex 2</a></li>
+    <li><a href="#">Pokedex 3</a></li>
+</ul>
+</div>
+        <div class=pokemons> 
             <img src="img/abra.png">
+            <div class="poke_description">
+
             <h1>Abra</h1>
-            <h2>psychic</h2>
+            <span class= "tipo_psychic"> 
+                <h2>psychic</h2></span>
+        </div>
+        </div>
            
 
 
 
-        </div>
-        <div class="columna">
+       
+        <div class=pokemons> 
             <img src="img/aerodactyl.png">
+ <div class="poke_description">
             <h1>Aaerodactyl</h1>
             <h2>rock</h2>
             <h2>fliying</h2>
-
+ </div>
+            </div>
         </div>
-        <div class="columna">
+
+        <div class=pokemons> 
             <img src="img/alakazam.png">
+            <div class="poke_description">
+
             <h1>Alakazam</h1>
             <h2>psychic</h2>
-          
-
-
         </div>
     </div>
-    <div class="fila">
-        <div class="columna">
+        </div>
+    
+
+        <div class=pokemons> 
             <img src="img/arbok.png">
+            <div class="poke_description">
+
+
             <h1>Arbok</h1>
             <h2>poison</h2>
-
         </div>
-        <div class="columna">
+    </div>
+        </div>
+
+
+        <div class=pokemons> 
             <img src="img/arcanine.png">
+            <div class="poke_description">
+
             <h1>Arcanine</h1>
             <h2>fire</h2>
-
+            </div>
         </div>
-        <div class="columna">
+        </div>
+
+        <div class=pokemons> 
             <img src="img/articuno.png">
+            <div class="poke_description">
+
             <h1>Articuno</h1>
             <h2>ice</h2>
             <h2>fliying</h2>
-
         </div>
-    </div>
+        </div>
+        </div>
+
 </body>
 
 </html>
