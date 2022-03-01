@@ -11,12 +11,34 @@
 
         h1 { 
             text-align: center;
-        
+        color: black;
+        text-shadow: 0px 2px 2px #000000;
+
+
+        display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 20ch;
+
+animation: typing 1s steps(12), blink .0s infinite step-end alternate;
+overflow:hidden;
+
         }
+
+        @keyFrames typing {
+
+from { width: 0}
+}
+
+@keyFrames blink {
+ 50% { border-color: transparent}
+}
+
         h2 { 
             
             text-align: center;
-        
+        text-shadow: 20px 10px 10px #000000;
         }
 
         
@@ -24,11 +46,7 @@
         
         }
 
-.tipo_psychic{
-    background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background-color: #b97fc9;
-    color: #fff;
-}
+
         
 .container1{
     display: grid;
@@ -58,6 +76,7 @@ background-color: rgb(0, 0, 0);
     border: 3px solid;
     animation-name: example;
   animation-duration: 4s;
+  text-align: center;
 
 
 }
@@ -122,6 +141,46 @@ animation-name: example;
   font-family: Cambria, Arial, Helvetica, sans-serif;
 }
 
+span.tipo_psychic {
+    background: linear-gradient(180deg, #971d72 50%, #79116b 50%);
+    background-color: #f0176a;
+    color: #fff;
+}
+span.tipo_fliying {
+
+background: linear-gradient(180deg, #969696 50%, #dadada 50%);
+background-color: #cacaca;
+color: #fff;
+}
+
+span.tipo_ice {
+
+background: linear-gradient(180deg, #971d72 50%, #79116b 50%);
+background-color: #f0176a;
+color: #fff;
+}
+
+span.tipo_fire {
+
+background: linear-gradient(180deg, #f5ac0f 50%, #ff0d0d 50%);
+background-color: #ee0f0f;
+color: #fff;
+}
+
+span.tipo_poison {
+
+background: linear-gradient(180deg, #9910e9 50%, #3910cc 50%);
+background-color: #f0176a;
+color: #fff;
+
+}
+
+span.tipo_rock {
+
+background: linear-gradient(180deg, #e9822f 50%, #c0351d 50%);
+background-color: #d1760d;
+color: #fff;
+}
         h2 {
   color: #000000;
   font-size: 18px;
@@ -156,8 +215,7 @@ animation-name: example;
             <div class="poke_description">
 
             <h1>Abra</h1>
-            <span class= "tipo_psychic"> 
-                <h2>psychic</h2></span>
+            <span class= "tipo_psychic">psychic</span>
                 
              
              </div>
@@ -167,8 +225,8 @@ animation-name: example;
             <img src="img/aerodactyl.png">
  <div class="poke_description">
             <h1>Aaerodactyl</h1>
-            <h2>rock</h2>
-            <h2>fliying</h2>
+            <span class= "tipo_rock">rock </spanrock>
+        <span class="tipo_fliying"> fliying</span>
             </div>
         </div>
         <div class=pokemons> 
@@ -176,7 +234,7 @@ animation-name: example;
             <div class="poke_description">
 
             <h1>Alakazam</h1>
-            <h2>psychic</h2>
+            <span class= "tipo_psychic">psychic </span>
         </div>
     </div>
     
@@ -189,7 +247,7 @@ animation-name: example;
 
 
             <h1>Arbok</h1>
-            <h2>poison</h2>
+            <span class="tipo_poison">poison </span>
         
   
         </div>
@@ -201,7 +259,7 @@ animation-name: example;
             <div class="poke_description">
 
             <h1>Arcanine</h1>
-            <h2>fire</h2>
+      <span class= "tipo_fire">fire </span>
         </div>
     </div>
 
@@ -210,8 +268,8 @@ animation-name: example;
         <div class="poke_description">
 
             <h1>Articuno</h1>
-            <h2 value="ice">ice</h2>
-            <h2>fliying</h2>
+           <span class="tipo_ice">ice </span>
+           <span class="tipo_fliying">fliying </span>
         </div>
         
         
