@@ -30,13 +30,21 @@
     color: #fff;
 }
         
+.container1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 .pokemons {
     border-radius: 40px;
     border: 3px solid;
 background-color: rgb(0, 0, 0);
   border-radius: 2px black;
-  display: grid;
-  grid-template-columns: auto auto auto;
+
 }
 
 .pokemons:hover {
@@ -50,6 +58,7 @@ background-color: rgb(0, 0, 0);
     border: 3px solid;
     animation-name: example;
   animation-duration: 4s;
+
 
 }
 
@@ -122,7 +131,9 @@ animation-name: example;
 
         img {
             /* Para que sea responsiva */
-            width: 30%;
+            width: auto;
+           display: grid;
+  place-content: center;
         }
     </style>
 
@@ -137,7 +148,9 @@ animation-name: example;
     <li><a href="#">Pokedex 2</a></li>
     <li><a href="#">Pokedex 3</a></li>
 </ul>
-</div>
+
+<div class="container">
+<div class=container1>
         <div class=pokemons> 
             <img src="img/abra.png">
             <div class="poke_description">
@@ -145,23 +158,19 @@ animation-name: example;
             <h1>Abra</h1>
             <span class= "tipo_psychic"> 
                 <h2>psychic</h2></span>
-        </div>
-        </div>
-           
-
-
-
-       
+                
+             
+             </div>
+            </div>
+  
         <div class=pokemons> 
             <img src="img/aerodactyl.png">
  <div class="poke_description">
             <h1>Aaerodactyl</h1>
             <h2>rock</h2>
             <h2>fliying</h2>
- </div>
             </div>
         </div>
-
         <div class=pokemons> 
             <img src="img/alakazam.png">
             <div class="poke_description">
@@ -170,20 +179,22 @@ animation-name: example;
             <h2>psychic</h2>
         </div>
     </div>
-        </div>
     
-
-        <div class=pokemons> 
+</div>
+    
+<div class=container2>
+         <div class=pokemons> 
             <img src="img/arbok.png">
             <div class="poke_description">
 
 
             <h1>Arbok</h1>
             <h2>poison</h2>
+        
+  
         </div>
     </div>
-        </div>
-
+    
 
         <div class=pokemons> 
             <img src="img/arcanine.png">
@@ -191,21 +202,22 @@ animation-name: example;
 
             <h1>Arcanine</h1>
             <h2>fire</h2>
-            </div>
         </div>
-        </div>
+    </div>
 
         <div class=pokemons> 
             <img src="img/articuno.png">
-            <div class="poke_description">
+        <div class="poke_description">
 
             <h1>Articuno</h1>
-            <h2>ice</h2>
+            <h2 value="ice">ice</h2>
             <h2>fliying</h2>
         </div>
-        </div>
-        </div>
-
+        
+        
+    </div>
+</div>
+</div>
 </body>
 
 </html>
